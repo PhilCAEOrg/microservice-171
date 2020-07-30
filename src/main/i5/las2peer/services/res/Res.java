@@ -71,9 +71,9 @@ public class Res extends RESTService {
 
   @Api
   @SwaggerDefinition(
-      info = @Info(title = "171", version = "$Metadata_Version$",
-          description = "$Metadata_Description$",
-          termsOfService = "$Metadata_Terms$",
+      info = @Info(title = "171", version = "1.0.0",
+          description = "Test Description",
+          termsOfService = "test",
           contact = @Contact(name = "", email = "CAEAddress@gmail.com") ,
           license = @License(name = "BSD",
               url = "https://github.com/PhilCAEOrg/microservice-171/blob/master/LICENSE.txt") ) )
@@ -89,7 +89,7 @@ public class Res extends RESTService {
    * 
    *
    * 
-   * @return Response 
+   * @return Response Gets todo items.
    * 
    */
   @GET
@@ -97,7 +97,7 @@ public class Res extends RESTService {
   @Produces(MediaType.APPLICATION_JSON)
   @Consumes(MediaType.TEXT_PLAIN)
   @ApiResponses(value = {
-       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "resp")
+       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "Gets todo items.")
   })
   @ApiOperation(value = "getTest", notes = " ")
   public Response getTest() {
